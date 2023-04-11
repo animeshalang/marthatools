@@ -3,7 +3,15 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: Arial, Helvetica, sans-serif;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:black;
+  background-image: url('bgr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
 
 /* The Modal (background) */
 .modal {
@@ -15,8 +23,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: black /* Fallback color */
+  background-color: black; /* Black w/ opacity */
   -webkit-animation-name: fadeIn; /* Fade in the background */
   -webkit-animation-duration: 1s;
   animation-name: fadeIn;
@@ -27,7 +35,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .modal-content {
   position: fixed;
   bottom: 0vh;
-  background-color: #fefefe;
+  background-color: black;
   width: 100vw;
   height:100vh;
   -webkit-animation-name: slideIn;
@@ -65,7 +73,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 2px 16px;
   background-color: #5cb85c;
   color: white;
-  bottom:-100vh;.
+  bottom:-100vh;
+  display:none;
 }
 
 /* Add Animation */
@@ -92,10 +101,16 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-<h2>Herramientas de Martha</h2>
+<!--<h2 style="color:white;">Herramientas de Martha</h2> -->
 
 <!-- TThis is the accounting Spreadsheet -->
-<button id="myBtn">contabilidad</button>
+<!--<button id="myBtn">contabilidad</button>-->
+
+<center>
+<img src="accounting.png"  id="myBtn" style="width:80vw;height:15vh;margin-top:30vh;">
+<br>
+<img src="loyalty.png" id="myBtn1" style="width:80vw;height:15vh;">
+</center>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -118,7 +133,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 
 
-<button id="myBtn1">Loyalty Program</button>
+<!--<button id="myBtn1">Loyalty Program</button-->
 <!-- The Modal -->
 <div id="myModal1" class="modal">
 
@@ -126,7 +141,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <div class="modal-content">
     <div class="modal-header">
       <span class="close">&times;</span>
-      <h2>Modal Header</h2>
+      <h2>Loyalty Program</h2>
     </div>
     <div class="modal-body">
       <embed src="https://docs.google.com/spreadsheets/d/1oZh00xcsBSh3kpoNfCrWFXBjVi_T10creus0X5UbeiA/edit?usp=sharing" style="width:100vw;height:80vh;">
